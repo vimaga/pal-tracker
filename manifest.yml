@@ -4,4 +4,4 @@ applications:
     routes:
       - route: pal-tracker-vimaga.cfapps.io
     env:
-      WELCOME_MESSAGE: Hello from the review Environment
+      WELCOME_MESSAGE: Hello from the review environment
