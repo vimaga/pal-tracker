@@ -25,7 +25,6 @@ bootRun.environment([
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
 ])
-
 flyway {
     url = 'jdbc:mysql://localhost:3306/'
     user = 'root'
