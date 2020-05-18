@@ -13,10 +13,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Startup test database instance
-      run: |
-        sudo /etc/init.d/mysql start
-        sudo service mysql start
+    - name: Change wrapper permissions
+        run: chmod +x ./gradlew
     - name: Create test database
       run: |
         mysql -uroot -padmin < databases/tracker/create_databases.sql
