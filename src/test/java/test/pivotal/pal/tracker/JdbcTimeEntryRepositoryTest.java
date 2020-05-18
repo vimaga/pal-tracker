@@ -49,7 +49,8 @@ public class JdbcTimeEntryRepositoryTest {
     }
 
     @Test
-    public void createReturnsTheCreatedTimeEntry() {
+    public void
+    createReturnsTheCreatedTimeEntry() {
         TimeEntry newTimeEntry = new TimeEntry(123, 321, LocalDate.parse("2017-01-09"), 8);
         TimeEntry entry = subject.create(newTimeEntry);
 
